@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  text-align: center;
+  width: 40vw;
+
+}
+
+body
+{
+  display: flex;
+}
+
+
+#personalInfo
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.profesionalSidebar
+{
+  display: flex;
+}

@@ -1,0 +1,335 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #2E4374;
+  color: white;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button, label.btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+#nameDisplay
+{
+  align-self: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+
+#main
+{
+  display: flex;
+}
+
+#CvPage
+{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 210mm;
+  height: fit-content;
+  color: black;
+  min-height: 80vh;
+}
+
+h4
+{
+  margin: 0;
+}
+
+#personalDisplay
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+hr
+{
+  border-top: 5px solid black;
+  width: 90%;
+}
+
+.educationDiv, .profesionalDiv
+{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  
+}
+
+.thinner
+{
+  border-top: 2px solid black;
+}
+
+.thinner:last-of-type
+{
+  border-top: 5px solid black;
+}
+
+.educationSidebar, .skillsSidebar, .profesionalSidebar
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 5vh;
+  background-color: #7C81AD;
+  border: 2px solid #4B527E;
+  border-radius: 2%/15%;
+}
+
+#educationDisplay, #profesionalDisplay, #personalDisplay
+{
+  width: 90%;
+}
+
+
+.profesionalDiv
+{
+  display: flex;
+  gap:20vw;
+}
+
+#skillsDisplay
+{
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-auto-rows: auto;
+  column-gap: 100px;
+  row-gap: 20px;
+  margin-bottom: 5vh;
+}
+
+
+.skillsDiv
+{
+  text-align: center;
+}
+
+
+#root>*
+{
+  margin-bottom: 5vh;
+}
+
+button
+{
+  width: 30vw;
+  align-self: center;
+  background-color: #E5C3A6;
+}
+
+input
+{
+  width: 20vw;
+  align-self: center;
+  margin-bottom: 1vh;
+}
+
+.addButton
+{
+  width: 10vw;
+}
+
+#downloadButton
+{
+  width: 8vw;
+  margin-top: 2vh;
+}
+
+form
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
+}
+
+input[type = "date"]
+{
+  width: 7vw;
+}
+
+.removeEducation, .removeProfesional, .removeSkills
+{
+    background: url('./img/remove.png');
+    width: 1vw;
+    height: 1vh;
+    border: none;
+    color: white;
+    display: flex;
+    position: absolute;
+    left: 30%;
+}
+
+.removeIcon
+{
+    width: 1.3vw;
+    filter: invert();
+}
+
+
+#profilePictureDisplay
+{
+  height: 150px;
+  aspect-ratio: 1/1;
+  display: flex;
+  
+  border-radius: 50%/50%;
+}
+
+#profilePictureInfo
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pictureAndName
+{
+  display: flex;
+  width: 80%;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  gap: 5vw;
+  align-items: center;
+}
+
+#pictureInput
+{
+  justify-self: center;
+  align-self: center;
+}
+
+#profileImage
+{
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 0.3px solid black;
+}
+
+#education, #profesional, #skills
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#educationListSidebar, #profesionalListSidebar, #skillsListSidebar
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vh;
+
+}
+
+#logo
+{
+  margin-left: 1vw;
+}
+
+label.btn
+{
+  background-color: #E5C3A6;
+  width: 20vw;
+  color: black;
+}
+p
+{
+  margin: 0;
+}
+
+.removeIcon
+{
+  padding: 0;
+  align-self: center;
+}
+
+@media print {
+	.no-printme  {
+		display: none;
+	}
+	.printme  {
+		display: flex;
+
+	}
+}
+
+.hidden
+{
+  display: none;
+}

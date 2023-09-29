@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id = "navbar" class="no-printme">
+      <h2 id = "logo">CvMaker</h2>
+    </div>
+    <div id = "main">
+        <div id="root" class="no-printme"></div>
+    <div id = "CvPage" class="printme">
+      <div id = "pictureAndName">
+        <div id = "profilePictureDisplay"></div>
+        <p id = "nameDisplay"></p>
+      </div>
+      
+      <hr>
+      <h2 id = "educationTitle">Personal Information</h2>
+      <div id = "personalDisplay">
+        <div style="display: flex;">
+           <h4>Email: &nbsp;</h4>
+            <p id = "emailDisplay"></p>
+        </div>
+        <div style="display: flex;">
+          <h4>Phone: &nbsp;</h4>
+           <p id = "phoneDisplay"></p>
+       </div>
+       <div style="display: flex;">
+        <h4>Adress: &nbsp;</h4>
+         <p id = "adressDisplay"></p>
+     </div>
+     <div style="display: flex;">
+      <h4>Birth Date: &nbsp;</h4>
+       <p id = "birthDisplay"></p>
+   </div>
+      </div>
+      <hr>
+      <h2 id = "educationTitle">Education</h2>
+      <div id = "educationDisplay"></div>
+      <hr>
+      <h2 id = "profesionalTitle">Professional Experience</h2>
+      <div id = "profesionalDisplay"></div>
+      <hr>
+      <h2 id = "profesionalTitle">Skills</h2>
+      <div id = "skillsDisplay"></div>
+    </div>
+    </div>
+    
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
